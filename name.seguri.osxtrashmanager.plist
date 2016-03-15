@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>name.seguri.osxtrashmanager</string>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>HOME</key>
+		<string>replace</string>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>$HOME/bin/osx-trash-manager.py</string>
+	</array>
+	<key>StandardOutPath</key>
+	<string>$HOME/.Trash.log</string>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>OnDemand</key>
+	<true/>
+	<key>ExitTimeOut</key>
+	<integer>0</integer>
+	<key>ProcessType</key>
+	<string>Background</string>
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Hour</key>
+		<integer>13</integer>
+		<key>Minute</key>
+		<integer>45</integer>
+	</dict>
+</dict>
+</plist>
